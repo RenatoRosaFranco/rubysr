@@ -8,7 +8,7 @@ class Member < ApplicationRecord
             uniqueness: false,
             allow_blank: false,
             length: { minimum: 3, maximum: 40 }
-  
+ 
   validates :email,
             presence: true,
             uniqueness: true,

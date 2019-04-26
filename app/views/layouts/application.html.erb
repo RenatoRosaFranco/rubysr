@@ -11,8 +11,10 @@
     <script type="text/javascript"><%= yield :js %></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <%= alertify_flash(wait: 5) %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body class='<%= controller.controller_name %>' data-spy='scroll'>
+    <%= render partial: 'shared/under-construct' %>
     <%= render partial: 'layouts/header' %>
     <%= yield %>
     <%= render partial: 'layouts/footer' %>
