@@ -20,9 +20,32 @@
  	font-size: 16px;
  }
 
+ header {
+ 	.navbar-default {
+ 	 position: relative;
+ 	 background-color: #FFFF;
+ 	 border-top: 5px solid #b80000;
+ 	 .navbar-brand {
+ 	 	position: relative;
+ 	 	font-weight: bold;
+ 	 	color: #b80000;
+ 	 	font-size: 22px;
+ 	 }
+ 	}
+ }
+
  .bold {
  	position: relative;
  	font-weight: bold;
+ }
+ 
+ #members {
+ 	form {
+ 		input[type=text], input[type] {
+ 			position: relative;
+ 			height: 44px;
+ 		}
+ 	}
  }
 
  footer {
@@ -30,4 +53,14 @@
  	border-top: 2px solid #EEE;
  	padding-top: 30px;
  	margin-top: 50px;
+ 	padding-bottom: 50px;
+
+ 	i {
+		position: relative;
+		color: #828282;
+		font-size: 20px;
+		margin-right: 10px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+ 	}
  }
